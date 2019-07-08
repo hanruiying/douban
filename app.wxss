@@ -1,0 +1,35 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1562140655713'); /* IE9 */
+  src: url('iconfont.eot?t=1562140655713#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOcAAsAAAAAB8AAAANPAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDJIJfATYCJAMMCwgABCAFhG0HORuoBsiuMG7hCUS73LERWmqsy3XvZrSBlpTEw9ca+v7uHoTQIUmSRCoqE5WJKrCsIqFSoapsjUZZFqrqJu2+z0HOSc/V0RWxSPb2lpOXs1v5i53UQRVcdGwJTrj1kkD8eJIPzPNgGg5GgM0hP/Qnuj1/z4pygkJTemhSezIbnDeAUFGW/zlc2rQE5gfKZe6BvYDiMAp0zHFHdgdygn7D2AUtcT+BXtOyOBxX1DUCd4U5LBDPRIEB7hmF0pAeWqGumFuID1y06dMLgPvg9+MflnBHUmXMsVcPynlQ9MPxsJkuo9NDYE6nA1tExiagELeVhhtOUWCTk15V4NwcXytCmsr97wgYGq+2/uGRBFFjpvaDVeRK/HCQcL9iXXVRBrXHCL0BfMTY8TNC2ZU7hKOZxjM32JsIo2XvlKT50pF0qxxrz9/lpNe6yd8o0Zp2bvObzl5lTlODGy8cs0D2Fd4qQm8+txr31mPP3WG3b65SW7dv8XrX12lNGwfMVirbKPbWrfGbAu8WvX33KEPFTeAOb/ISXrs58nDTw3ULO1nvMFKBuwNL35cd0+uzrTx/8/dR/pIJa9/ebyFmOgqTDKnGM39ZGV8Nu0F/lWrzWUDh+zu/y01PqJ6ZRHt9vO57speaqLTH0sjLJ9+/LCgjI20BHg3/C+5G0r95jgzpIk2RiR/PNR2+xv+U2h4c9puBXgDdRnHyAdAd5t9Odz/qb/xvDC56ANub1Bfgs5kfAbt7klaCMX9LRUHR/SuZs01lLgrDYRjG7Cxlk4A0LvQzMmHU1+GSiVsPhdZEAkljCrLWIrJgN6HSZwtqrT3otaFycZ8xhJMohXULAMKw65AM+gTZsJfIgv0ClUnfoDYcTtDrOihr9lkO0dNOEEMRD9kRKHKaim019QzT65EwIDMkzQ7wzYjYRTc0G0z5cCVSEZlign1QsFCKISaaAivAYUiWNagTrR9x1NBHqZ5jNOKqbzJwmgI8HSEQBoXwINYISMTRqLDXmvIs/Hw9RDBAxiANdVXKZghhJ3YPmRmYOiArBWqnult5xG6QwIKiMAgjNAqoAvRCZDINpFf36odwKIO+AT5dDqPVCHcVGJYXKe+3DXqZW+cYWaF5JaoCRqqLnzKEAgAA') format('woff2'),
+  url('iconfont.woff?t=1562140655713') format('woff'),
+  url('iconfont.ttf?t=1562140655713') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1562140655713#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pingfen:before {
+  content: "\e745";
+}
+
+.icon-start:before {
+  content: "\e502";
+}

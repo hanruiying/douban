@@ -1,0 +1,8 @@
+<import src='../template-item/template-item.wxml'/>
+<template name='movie-list'>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex; width: 100%" >
+    <view style="background: red; width: 200rpx; height: 400rpx; display: inline-block" >
+      <template is='list-item'></template>
+    </view>
+  </scroll-view>
+</template>

@@ -1,0 +1,7 @@
+<template name='star-list'>
+  <block class='starContainer'>
+      <i class='iconfont icon-pingfen' wx:for='{{starList}}' wx:key='{{index}}' wx:if='{{item === 1}}' style='font-size: 24rpx; color: #ffc300;float: left'></i>
+      <i class='iconfont icon-pingfen' wx:for='{{starList}}' wx:key='{{index}}'  wx:if='{{item === 0}}' style='font-size: 24rpx; color: #e5e5e5; float: left'></i>
+      <text style='float: left'>{{average}}</text>
+  </block>
+</template>

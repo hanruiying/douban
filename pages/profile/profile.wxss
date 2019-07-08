@@ -1,0 +1,7 @@
+/* pages/profile/profile.wxss */
+.imgContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,27 @@
+<import src='../starTemplate/startTemplate.wxml' />
+<view>
+  <!-- <template is='movie-list'></template> -->
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='margin-bottom: 20rpx; width: 100%; height: 600rpx'>
+    <block wx:for="{{movies[1].detail.subjects}}" wx:key='{{movies[1].detail.subjects}}'>
+      <swiper-item style='width: 100%; height: 600rpx'>
+        <image src="{{item.images.large}}" style='width: 100%; height: 600rpx' class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <block>
+      <view wx:key='{{index}}' wx:for='{{movies}}'>
+        <view class='viewContainer'>
+          <text class='titleName'>{{item.name}}</text>
+          <text class='titleMore' data-name='{{item.name}}' data-title='{{item.key}}' catchtap='handleClick'>>></text>
+        </view>
+        <scroll-view scroll-x="true" class='movie-list'>
+        <view class='listItem' wx:for='{{item.detail.subjects}}' wx:for-item="itemName" wx:for-index='itemindex' wx:key='{{itemindex}}' catchtap='routerTodetail' data-id='{{itemName.id}}'>
+          <image src='{{itemName.images.large}}'/>
+          <text>{{itemName.title}}</text>
+          <template is='star-list' data='{{...itemName.rating}}'></template>
+        </view>
+        </scroll-view>
+      </view>
+  </block>
+</view>

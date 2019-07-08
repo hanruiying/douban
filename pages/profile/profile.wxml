@@ -1,0 +1,3 @@
+<view class='imgContainer'>
+  <image src='/images/avater.jpg' style='width: 480rpx; heihgt: 480rpx;'/>
+</view>

@@ -1,0 +1,4 @@
+.starContainer{
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userInfo">
+     <image src='{{userInfo.avatarUrl}}'> </image>
+     <text class='nickName'>hello {{userInfo.nickName}}</text>
+     <view class='gotonew'>
+      <text catchtap='handleRouter'>电影之旅</text>
+     </view>
+     <!-- <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" style='display: {{isShow?"block":"none"}}'>点击授权</button> -->
+  </view>
+</view>

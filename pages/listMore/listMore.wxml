@@ -1,0 +1,9 @@
+<view style="width: calc(100% / 3); float: left;height: 480rpx; display: inline-block; white-space: nowrap" wx:for='{{movie}}' wx:key='{{index}}' catchtap='routerTodetail' data-id='{{item.id}}'>
+  <image style='border-radius: 10rpx; height: 400rpx; display: inline-block; width: 95%' src='{{item.images.large}}'/>
+  <text style='font-size: 20rpx; font-weight: 700; display: block; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;text-align: left;'>{{item.title}}</text>
+  <view>
+    <i class='iconfont icon-pingfen' style='font-size: 24rpx; color: #ffc300;' wx:for='{{item.rating.average / 2 - 1}}' wx:key='{{index}}'></i>
+    <i class='iconfont icon-pingfen' style='font-size: 24rpx; color: #e5e5e5;' wx:key='{{index}}' wx:for='{{5-(item.rating.average / 2)}}'></i>
+    <text style='display: inline-block; font-size: 24rpx;margin-left: 20rpx;'>{{item.rating.average}}</text>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+/* pages/movie/movie.wxss */
+
+.viewContainer{
+  overflow: hidden;
+  margin: 20rpx 0;
+  background-color: #fff;
+}
+.viewContainer .titleName{
+  font-size: 28rpx;
+  float: left;
+  margin-left: 10rpx;
+}
+.viewContainer .titleMore{
+  float: right;
+  color: #333333;
+  font-size: 26rpx;
+  margin-right: 20rpx;
+}
+.movie-list{
+  white-space: nowrap;
+  margin-bottom: 20rpx;
+  display: flex;
+  width: 100%;
+}
+.listItem{
+  width: 200rpx;
+  height: 380rpx;
+  margin: 0 10rpx; 
+  display: inline-block;
+}
+.listItem image{
+  width: 200rpx;
+  /* border-radius: 10rpx; */
+  height: 300rpx;
+  display: inline-block;
+}
+.listItem text{
+  font-size: 20rpx;
+  font-weight: 700;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+.icon-pingfen{
+  font-size: 24rpx;
+  color: #ffc300;
+}
+.listItem-name{
+  display: inline-block;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
